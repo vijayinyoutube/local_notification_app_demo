@@ -4,6 +4,8 @@ import 'Services/notifi_service.dart';
 import 'home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  NotificationService().initNotification();
   runApp(const MyApp());
 }
 
